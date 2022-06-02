@@ -7,6 +7,7 @@ const image = {
     width: "20%",
     height: "20%",
     display: "flex",
+    border: "null",
 }
 class Index extends React.Component {
     render() {
@@ -27,6 +28,9 @@ class Index extends React.Component {
                         return(
                         <div>
                             <img style={image} src={Products.image}></img>
+                            The {Products.name} is {Products.price}
+            <br></br>
+            {Products.description}
                         </div>
                         )
                 })}

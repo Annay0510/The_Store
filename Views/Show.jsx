@@ -1,8 +1,8 @@
-const React = require("react")
-const Products = require ("Products")
+const React = require ("react")
+const Products = require ("../Models/products")
 class Show extends React.Component{
     render (){
-        const {Products} =this.props
+        const Products =this.props.Products
         return(
             <div>
             <h1>Tooth Paste</h1>
